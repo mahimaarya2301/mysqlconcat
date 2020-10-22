@@ -1,0 +1,18 @@
+create table person(
+    -> id int unsigned primary key auto_increment,
+    -> name varchar(255),
+    -> surname varchar(255)
+    -> );
+
+insert into person values (null,'anil','dollor');
+insert into person values (null,'priyanka','yadav');
+
+
+select concat(name,' ',surname) as 'Full Name' from person;
+
++----------------+
+| Full Name      |
++----------------+
+| anil dollor    |
+| priyanka yadav |
++----------------+
